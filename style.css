@@ -1,0 +1,103 @@
+:root {
+    --header-size: 100px;
+    --main-size: calc(100vh - var(--header-size));
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+    align-items: center;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: var(--header-size);
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+
+}
+
+#header h1 {
+    color:#392425;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 80px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: var(--main-size);
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0 4px 8px #522B1C(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 32px;
+    gap: 16px;
+    font: Arial;
+    font-size: 26px;
+}
+
+.titulo {
+    color:#190808;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    font-size: 40px;
+    text-align: center;
+}
+
+.personagens {
+    color:#190808;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    font-size: 40px;
+    text-align: center;
+}
+
+.imagens-gifs {
+    text-align: center;
+}
+
+.descricao {
+    color:#000000;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    font-size: 30px;
+    align-items: center;
+}
+
+.sobre {
+    color:#000000;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    font-size: 24px;
+    text-align: center;
+}
+
+button {
+    background-color: #C0BBBB;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 10%;
+    text-align: center;
+    align-items: right;
+    flex-direction: right;
+}
